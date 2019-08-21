@@ -1,0 +1,170 @@
+<style>
+.center{
+text-align:center;
+}
+.pagination{
+display:online-block;
+}
+.pagination a{
+color:black;
+float:left;
+padding:8px 16px;
+text-decoration:none;
+transition:background-color .3s;
+border:1px solid #ddd;
+margin:0 4px;
+}
+.pagination a.active{
+background-color:#4CAF50;
+color:white;
+border:1px solid #4CAF50;
+}
+.paginamtion a:hover:not(.active){background-color:#ddd;}
+.button{
+background-color:#4CAF50;
+border:none;
+color:white;
+padding:20px;
+text-align:center;
+text-decoration:none;
+display:inline-block;
+font-size:16px;
+margin:4px 2px;
+cursor:pointer;
+}
+.button1{border-radius:50%;}
+.fill{
+object-fit:fill;}
+.container{
+position:relative;
+width:50%;
+}
+.image{
+display:block;
+width:100%;
+height:auto;
+}
+.overlay{
+position:absolute;
+bottom:0;
+left:0;
+right:0;
+background-color:#008CBA;
+overflow:hidden;
+width:0;
+height:100%;
+transition:.5s ease;
+}
+.container:hover .overlay{
+width:100%;
+}
+.text{
+white-space:nowrap;
+color:white;
+font-size:20px;
+position:absolute;
+overflow:hidden;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+-ms-transform:translate(-50%,-50%);
+}
+.tooltip{
+position:relative;
+display:inline-block;
+border-bottom:1px dotted black;
+}
+.tooltip .tooltiptext{
+visibility:hidden;
+width:120px;
+background-color:black;
+color:#fff;
+text-align:center;
+border-radius:6px;
+padding:5px 0;
+position:absolute;
+z-index:1;
+bottom:100%;
+left:50%;
+margin-left:-60px;
+opacity:0;
+transition:opacity 1s;
+}
+.tooltip:hover .tooltiptext{
+visibility:visible;
+opacity:1;
+}
+div.p{
+width:100px;
+height:100px;
+background:red;
+position:relative;
+-webkit-animation-name:example;
+-webkit-animation-duration:3s;
+-webkit-animation-fill-mode:forwards;
+animation-name:example;
+animation-duration:3s;
+animation-fill-mode:forwards;
+}
+@-webkit-keyframes example{
+from{top:0px;}
+to{top:200px; background-color:blue;}
+}
+@keyframes example{
+from{top:0px;}
+to{top:200px;background-color:blue;}
+}
+div.o{
+width:100px;
+height:100px;
+background:red;
+-webkit-transition:width 2s linear 1s;
+transition:width 2s linear 1s;
+}
+div:hover{
+width:300px;
+}
+div#b{
+width:300px;
+height:100px;
+background-color:violet;
+border:1px solid black;
+}
+div#myDiv1{
+-ms-transform:matrix(1, -0.3, 0, 1, 0, 0);
+-webkit-transform:matrix(1, -0.3, 0, 1, 0, 0);
+transform:matrix(1, -0.3, 0, 1, 0, 0);
+}
+div#myDiv2{
+-ms-transform:matrix(1, 0, 0.5, 1, 150, 0);
+-webkit-transform:matrix(1, 0, 0.5, 1, 150, 0);
+transform:matrix(1, 0, 0.5, 1, 150, 0);
+}
+@font-face{
+font-family:myFirstFont;
+src:url(sansation_light.woff);
+}
+@font-face{
+font-family:myFirstFont;
+src:url(sansation_bold.woff);
+font-weight:bold;
+}
+*{
+font-family:myFirstFont;
+}
+p.text1{
+writing-mode:vertical-rl;
+}
+span.text2{
+writing-mode:horizontal-tb;
+}
+h1.d{
+color:yellow;
+text-shadow:-1px 0 black,0 1px black,1px 0 black,0 -1px black;
+}
+#grad1{
+height:55px;
+background-color:red;
+background-image:linear-gradient(to right,red,orange,yellow,green,blue,indigo,violet);
+}
+</style>
